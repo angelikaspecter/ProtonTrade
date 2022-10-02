@@ -365,6 +365,10 @@ body {
 .footer__link :active {
   color: var(--color-one);
 }
+.footer__link:hover,
+.footer__link :active {
+  color: var(--white);
+}
 @media (max-width: 991px) {
   .footer__link {
     font-family: "Poppins";
