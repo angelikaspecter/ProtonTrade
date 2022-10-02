@@ -1,0 +1,44 @@
+:root {
+    --color-one: #3355ff;
+    --color-two: #122791;
+    --color-three: #4867ff;
+    --color-four: #1631b6;
+    --white: #ffffff;
+    --light-color-one: #fbfbfb;
+    --light-color-two: #edeeef;
+    --middle-color-one: #808080;
+    --middle-color-two: #b8b8b8;
+    --dark-color: #343a40;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: flex;
+}
+
+@import "_mixins";
+@import "_container";
+@import "_scrollbar";
+@import "_btn";
+@import "_header";
+
+@media (max-width: 464px) {
+}
+@media (min-width: 465px) and (max-width: 767px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+}

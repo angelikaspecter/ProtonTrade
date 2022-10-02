@@ -1,0 +1,12 @@
+.logo {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    &--icon {
+        margin: 0;
+    }
+    &--text {
+        margin-left: 8px;
+    }
+}

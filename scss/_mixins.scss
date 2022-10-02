@@ -1,0 +1,42 @@
+@mixin btn-primary {
+    background: var(--color-one);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & svg {
+        width: 60px;
+        height: auto;
+        margin-left: 8px;
+    }
+    &:hover {
+        background: var(--color-two);
+    }
+}
+
+@mixin btn-secondary {
+    background: var(--color-three);
+    border: 2px solid var(--white);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & svg {
+        width: 60px;
+        height: auto;
+        margin-left: 8px;
+    }
+    &:hover {
+        background: var(--color-four);
+        border: 3px solid var(--white);
+    }
+}
+
+@mixin link {
+    text-decoration: none;
+    color: var(--dark-color);
+    &:hover,
+    :active {
+        color: var(--color-one);
+    }
+}

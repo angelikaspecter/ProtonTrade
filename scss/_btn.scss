@@ -1,0 +1,17 @@
+.btn {
+    width: 276px;
+    height: 56px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    border: none;
+    &--primary {
+        @include btn-primary;
+    }
+    &--secondary {
+        @include btn-secondary;
+    }
+}

@@ -1,0 +1,96 @@
+.nav {
+    &--desktop {
+        @media (max-width: 991px) {
+            display: none;
+        }
+        @media (min-width: 992px) {
+            display: flex;
+        }
+    }
+    &--mobile {
+        @media (max-width: 991px) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--white);
+            margin: 0;
+        }
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+    &__menu {
+        width: 34px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        & svg {
+            width: 100%;
+        }
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        width: 26px;
+        height: 26px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        z-index: 55;
+        &:hover,
+        :active {
+            fill: var(--middle-color-one);
+        }
+    }
+    &__list {
+        list-style: none;
+        @media (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        @media (min-width: 992px) {
+            width: 409px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+    }
+    &__link {
+        @include link;
+        @media (max-width: 991px) {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 48px;
+        }
+        @media (min-width: 992px) {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
