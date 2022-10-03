@@ -103,7 +103,16 @@
                                 fill="white" />
                         </svg>
                     </button>
-                    <p class="promo__info--count"><img src="img/users.svg" width="37px" height="24px" alt="users icon">
+                    <p class="promo__info--count">
+                        <picture>
+                            <source media="(max-width: 464px)" srcset="img/users.svg">
+                            <source media="(min-width: 465px) and (max-width: 767px)" srcset="img/users.svg">
+                            <source media="(min-width: 768px) and (max-width: 991px)" srcset="img/users.svg">
+                            <source media="(min-width: 992px) and (max-width: 1199px)" srcset="img/users.svg">
+                            <source media="(min-width: 1200px) and (max-width: 1439px)" srcset="img/users.svg">
+                            <source media="(min-width: 1440px) and (max-width: 1919px)" srcset="img/users.svg">
+                            <img src="img/users.svg" width="37px" height="24px" alt="users icon">
+                        </picture>
                         Уже используют: 589 человек
                     </p>
                 </div>
