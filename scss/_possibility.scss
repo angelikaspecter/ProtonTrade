@@ -1,17 +1,17 @@
 .possibility {
-    box-sizing: border-box;
     background-color: var(--light-color-one);
+    @include container;
     @media (max-width: 767px) {
-        padding: 0 12px 60px;
+        padding-top: 0;
     }
     @media (min-width: 768px) and (max-width: 1199px) {
-        padding: 400px 12px 100px;
+        padding-top: 400px;
     }
     @media (min-width: 1200px) and (max-width: 1439px) {
-        padding: 200px 84px 100px;
+        padding-top: 200px;
     }
     @media (min-width: 1440px) {
-        padding: 200px 132px 100px;
+        padding-top: 200px;
     }
     &__list {
         list-style: none;
@@ -25,7 +25,6 @@
     }
     &__item {
         @include card;
-        box-sizing: border-box;
         position: relative;
         margin-top: 40px;
         & picture {
@@ -63,27 +62,10 @@
         }
     }
     &__title {
-        font-family: "Rubik";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 50px;
-        color: var(--dark-color);
-        @media (max-width: 1199px) {
-            font-size: 40px;
-            line-height: 47px;
-            margin: 0;
-        }
+        @include h2;
     }
     &__subtitle {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 164.6%;
-        letter-spacing: 0.01em;
-        color: var(--dark-color);
-        margin: 0;
+        @include h4;
         margin-top: 20px;
         margin-bottom: 5px;
         @media (max-width: 767px) {

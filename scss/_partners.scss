@@ -1,0 +1,7 @@
+.partners {
+    background-color: var(--white);
+    @include container;
+    &__title {
+        @include h2;
+    }
+}

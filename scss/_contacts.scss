@@ -1,0 +1,7 @@
+.contacts {
+    background-color: var(--light-color-one);
+    @include container;
+    &__title {
+        @include h2;
+    }
+}
