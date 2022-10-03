@@ -148,8 +148,12 @@ body {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  position: relative;
   background-color: var(--white);
-  filter: drop-shadow(0px 0px 34px rgba(208, 208, 208, 0.4));
+  box-shadow: 0px 0px 34px 0px rgba(208, 208, 208, 0.4);
+  -webkit-box-shadow: 0px 0px 34px 0px rgba(208, 208, 208, 0.4);
+  -moz-box-shadow: 0px 0px 34px 0px rgba(208, 208, 208, 0.4);
+  z-index: 55;
 }
 @media (max-width: 991px) {
   .header {
@@ -299,6 +303,108 @@ body {
     font-size: 14px;
     line-height: 21px;
   }
+}
+
+.promo {
+  position: relative;
+  background: var(--white) url("../img/bg.svg") no-repeat center/cover;
+}
+@media (max-width: 767px) {
+  .promo {
+    background-position: 40% 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .promo {
+    background-position: 75% 0;
+  }
+}
+@media (max-width: 767px) {
+  .promo__info {
+    padding: 73px 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .promo__info {
+    padding: 192px 84px;
+  }
+}
+@media (min-width: 1440px) {
+  .promo__info {
+    padding: 246px 132px;
+  }
+}
+.promo__info--pretitle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .promo__info--pretitle {
+    font-size: 18px;
+  }
+}
+.promo__info--title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .promo__info--title {
+    font-size: 58px;
+  }
+}
+.promo__info--desc {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin: 0;
+  color: var(--dark-color);
+}
+@media (max-width: 767px) {
+  .promo__info--desc {
+    font-size: 16px;
+  }
+}
+.promo__info--btn-block {
+  display: flex;
+  align-items: center;
+  margin-top: 62px;
+}
+@media (max-width: 991px) {
+  .promo__info--btn-block {
+    flex-direction: column;
+  }
+  .promo__info--btn-block button {
+    width: 100%;
+  }
+}
+.promo__info--count {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-color);
+}
+.promo__info--count img {
+  margin-right: 8px;
 }
 
 .footer {
