@@ -40,3 +40,11 @@
         color: var(--color-one);
     }
 }
+
+@mixin card {
+    padding: 43px 48px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 34px rgba(208, 208, 208, 0.4);
+    border-radius: 4px;
+    box-sizing: border-box;
+}

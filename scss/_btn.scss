@@ -8,6 +8,7 @@
     line-height: 24px;
     color: var(--white);
     border: none;
+    text-decoration: none;
     &--primary {
         @include btn-primary;
     }
