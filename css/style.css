@@ -69,6 +69,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .btn--primary svg {
   width: 60px;
@@ -927,10 +928,26 @@ body {
     width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .partners__left {
     width: 100%;
-    max-width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .partners__left {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .partners__left {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+@media (min-width: 1440px) {
+  .partners__left {
+    width: 100%;
+    max-width: 350px;
   }
 }
 .partners__title {
@@ -1013,6 +1030,8 @@ body {
 
 .contacts {
   background-color: var(--light-color-one);
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .contacts {
@@ -1034,6 +1053,44 @@ body {
     padding: 100px 132px;
   }
 }
+@media (max-width: 991px) {
+  .contacts {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__left {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contacts__left {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .contacts__left {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts__left {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+.contacts__right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .contacts__right {
+    justify-content: start;
+  }
+}
 .contacts__title {
   font-family: "Rubik";
   font-style: normal;
@@ -1042,12 +1099,118 @@ body {
   line-height: 50px;
   margin-top: 0;
   color: var(--dark-color);
+  margin-bottom: 16px;
 }
 @media (max-width: 1199px) {
   .contacts__title {
     font-size: 40px;
     line-height: 47px;
     margin: 0;
+  }
+}
+.contacts__desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .contacts__desc {
+    margin-bottom: 30px;
+  }
+}
+.contacts__form {
+  width: 100%;
+  max-width: 767px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .contacts__form {
+    max-width: 100%;
+    margin-top: 24px;
+  }
+}
+.contacts__form--group {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .contacts__form--group {
+    flex-direction: column;
+  }
+}
+.contacts__form--group input {
+  width: 50%;
+  background: #edeeef;
+  border: 1px solid #e3e5e6;
+  border-radius: 4px;
+  padding: 20px 24px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #808080;
+  width: 100%;
+}
+.contacts__form textarea {
+  background: #edeeef;
+  border: 1px solid #e3e5e6;
+  border-radius: 4px;
+  padding: 20px 24px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #808080;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  resize: none;
+}
+.contacts__form--desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #808080;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.contacts__form button {
+  background: var(--color-one);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 18px 60px;
+  max-width: 276px;
+}
+.contacts__form button svg {
+  width: 60px;
+  height: auto;
+  margin-left: 8px;
+}
+.contacts__form button:hover {
+  background: var(--color-two);
+}
+@media (max-width: 991px) {
+  .contacts__form button {
+    max-width: 100%;
   }
 }
 
@@ -1138,4 +1301,48 @@ body {
     line-height: 24px;
     color: var(--white);
   }
+}
+
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus,
+input.active.focus,
+input.active:focus,
+input.focus,
+input:active.focus,
+input:active:focus,
+input:focus,
+select.active.focus,
+select.active:focus,
+select.focus,
+select:active.focus,
+select:active:focus,
+select:focus,
+textarea.active.focus,
+textarea.active:focus,
+textarea.focus,
+textarea:active.focus,
+textarea:active:focus,
+textarea:focus {
+  outline: 0 !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-style: none !important;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+  text-decoration: none;
 }

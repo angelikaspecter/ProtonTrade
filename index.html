@@ -336,7 +336,7 @@
                             <source media="(min-width: 992px) and (max-width: 1199px)" srcset="img/binance.svg">
                             <source media="(min-width: 1200px) and (max-width: 1439px)" srcset="img/binance.svg">
                             <source media="(min-width: 1440px) and (max-width: 1919px)" srcset="img/binance.svg">
-                            <img src="img/binance.svg" alt="">
+                            <img src="img/binance.svg" alt="binance">
                         </picture>
                     </li>
                     <li class="partners__item">
@@ -347,7 +347,7 @@
                             <source media="(min-width: 992px) and (max-width: 1199px)" srcset="img/huobi-global.svg">
                             <source media="(min-width: 1200px) and (max-width: 1439px)" srcset="img/huobi-global.svg">
                             <source media="(min-width: 1440px) and (max-width: 1919px)" srcset="img/huobi-global.svg">
-                            <img src="img/huobi-global.svg" alt="">
+                            <img src="img/huobi-global.svg" alt="huobi-global">
                         </picture>
                     </li>
                     <li class="partners__item">
@@ -358,7 +358,7 @@
                             <source media="(min-width: 992px) and (max-width: 1199px)" srcset="img/okex.svg">
                             <source media="(min-width: 1200px) and (max-width: 1439px)" srcset="img/okex.svg">
                             <source media="(min-width: 1440px) and (max-width: 1919px)" srcset="img/okex.svg">
-                            <img src="img/okex.svg" alt="">
+                            <img src="img/okex.svg" alt="okex">
                         </picture>
                     </li>
                     <li class="partners__item">
@@ -369,7 +369,7 @@
                             <source media="(min-width: 992px) and (max-width: 1199px)" srcset="img/bitfinex.svg">
                             <source media="(min-width: 1200px) and (max-width: 1439px)" srcset="img/bitfinex.svg">
                             <source media="(min-width: 1440px) and (max-width: 1919px)" srcset="img/bitfinex.svg">
-                            <img src="img/bitfinex.svg" alt="">
+                            <img src="img/bitfinex.svg" alt="bitfinex">
                         </picture>
                     </li>
                     <li class="partners__item">
@@ -380,7 +380,7 @@
                             <source media="(min-width: 992px) and (max-width: 1199px)" srcset="img/hitbtc.svg">
                             <source media="(min-width: 1200px) and (max-width: 1439px)" srcset="img/hitbtc.svg">
                             <source media="(min-width: 1440px) and (max-width: 1919px)" srcset="img/hitbtc.svg">
-                            <img src="img/hitbtc.svg" alt="">
+                            <img src="img/hitbtc.svg" alt="hitbtc">
                         </picture>
                     </li>
                     <li class="partners__item">
@@ -391,14 +391,29 @@
                             <source media="(min-width: 992px) and (max-width: 1199px)" srcset="img/bitstamp.svg">
                             <source media="(min-width: 1200px) and (max-width: 1439px)" srcset="img/bitstamp.svg">
                             <source media="(min-width: 1440px) and (max-width: 1919px)" srcset="img/bitstamp.svg">
-                            <img src="img/bitstamp.svg" alt="">
+                            <img src="img/bitstamp.svg" alt="bitstamp">
                         </picture>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="contacts" id="form">
-            <h2 class="contacts__title">Для связи с нами</h2>
+            <div class="contacts__left">
+                <h2 class="contacts__title">Для связи с нами</h2>
+                <p class="contacts__desc">Можете задать нам любой вопрос про бота</p>
+            </div>
+            <div class="contacts__right">
+                <form action="" method="post" class="contacts__form">
+                    <div class="contacts__form--group">
+                        <input type="text" name="name" id="name" placeholder="Имя">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <textarea name="message" id="message" cols="100" rows="8" placeholder="Сообщение"></textarea>
+                    <p class="contacts__form--desc">Нажимая на кнопку «Отправить вопрос», вы даете согласие на обработку
+                        персональных данных.</p>
+                    <button type="submit">Отправить вопрос</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
