@@ -3,18 +3,18 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: #020e1a !important;
+    background: var(--light-color-two) !important;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #020e1a;
+    background-color: var(--light-color-two);
     border-radius: 20px;
-    border: 3px solid #033763;
+    border: 3px solid var(--middle-color-one);
 }
 
 html {
     scrollbar-width: thin;
-    scrollbar-color: #033763 #020e1a;
+    scrollbar-color: var(--middle-color-one) var(--light-color-two);
 }
 
 body {

@@ -82,7 +82,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 21px;
-            color: #808080;
+            color: var(--middle-color-one);
             margin: 0;
             margin-bottom: 24px;
         }
@@ -93,7 +93,7 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
-            color: #ffffff;
+            color: var(--white);
             padding: 18px 60px;
             max-width: 276px;
             @media (max-width: 991px) {

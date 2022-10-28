@@ -33,18 +33,18 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  background: #020e1a !important;
+  background: var(--light-color-two) !important;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #020e1a;
+  background-color: var(--light-color-two);
   border-radius: 20px;
-  border: 3px solid #033763;
+  border: 3px solid var(--middle-color-one);
 }
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #033763 #020e1a;
+  scrollbar-color: var(--middle-color-one) var(--light-color-two);
 }
 
 body {
@@ -1148,27 +1148,27 @@ body {
 }
 .contacts__form--group input {
   width: 50%;
-  background: #edeeef;
-  border: 1px solid #e3e5e6;
+  background: var(--light-color-two);
+  border: 1px solid var(--light-color-two);
   border-radius: 4px;
   padding: 20px 24px;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #808080;
+  color: var(--middle-color-one);
   width: 100%;
 }
 .contacts__form textarea {
-  background: #edeeef;
-  border: 1px solid #e3e5e6;
+  background: var(--light-color-two);
+  border: 1px solid var(--light-color-two);
   border-radius: 4px;
   padding: 20px 24px;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #808080;
+  color: var(--middle-color-one);
   width: 100%;
   margin-top: 24px;
   margin-bottom: 12px;
@@ -1180,7 +1180,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #808080;
+  color: var(--middle-color-one);
   margin: 0;
   margin-bottom: 24px;
 }
@@ -1196,7 +1196,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: var(--white);
   padding: 18px 60px;
   max-width: 276px;
 }

@@ -103,14 +103,14 @@
 }
 
 @mixin form {
-    background: #edeeef;
-    border: 1px solid #e3e5e6;
+    background: var(--light-color-two);
+    border: 1px solid var(--light-color-two);
     border-radius: 4px;
     padding: 20px 24px;
     font-family: "Poppins";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #808080;
+    color: var(--middle-color-one);
     width: 100%;
 }
