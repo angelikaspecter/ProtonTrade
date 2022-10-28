@@ -1129,7 +1129,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .contacts__form {
     max-width: 100%;
     margin-top: 24px;
