@@ -1162,13 +1162,13 @@ body {
   width: 100%;
 }
 .contacts__form--group input::-moz-placeholder {
-  color: var(--middle-color-one);
+  color: var(--dark-color);
 }
 .contacts__form--group input:-ms-input-placeholder {
-  color: var(--middle-color-one);
+  color: var(--dark-color);
 }
 .contacts__form--group input::placeholder {
-  color: var(--middle-color-one);
+  color: var(--dark-color);
 }
 .contacts__form textarea {
   background: var(--light-color-two);
@@ -1186,13 +1186,13 @@ body {
   resize: none;
 }
 .contacts__form textarea::-moz-placeholder {
-  color: var(--middle-color-one);
+  color: var(--dark-color);
 }
 .contacts__form textarea:-ms-input-placeholder {
-  color: var(--middle-color-one);
+  color: var(--dark-color);
 }
 .contacts__form textarea::placeholder {
-  color: var(--middle-color-one);
+  color: var(--dark-color);
 }
 .contacts__form--desc {
   font-family: "Poppins";
@@ -1200,7 +1200,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: var(--middle-color-one);
+  color: var(--dark-color);
   margin: 0;
   margin-bottom: 24px;
 }
