@@ -1156,8 +1156,17 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--middle-color-one);
+  color: var(--dark-color);
   width: 100%;
+}
+.contacts__form--group input::-moz-placeholder {
+  color: var(--middle-color-one);
+}
+.contacts__form--group input:-ms-input-placeholder {
+  color: var(--middle-color-one);
+}
+.contacts__form--group input::placeholder {
+  color: var(--middle-color-one);
 }
 .contacts__form textarea {
   background: var(--light-color-two);
@@ -1168,11 +1177,20 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--middle-color-one);
+  color: var(--dark-color);
   width: 100%;
   margin-top: 24px;
   margin-bottom: 12px;
   resize: none;
+}
+.contacts__form textarea::-moz-placeholder {
+  color: var(--middle-color-one);
+}
+.contacts__form textarea:-ms-input-placeholder {
+  color: var(--middle-color-one);
+}
+.contacts__form textarea::placeholder {
+  color: var(--middle-color-one);
 }
 .contacts__form--desc {
   font-family: "Poppins";
